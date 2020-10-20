@@ -1,0 +1,27 @@
+﻿@page "/listbinding"
+@using System.Collections.Generic
+
+<h3>List Binding</h3>
+
+<SfKanban KeyField="Status" DataSource="Source">
+    <KanbanColumns>
+         @foreach (ColumnModel item in columnData)
+            {
+                 <KanbanColumn HeaderText="@item.HeaderText" KeyField="@item.KeyField"></KanbanColumn>
+            }
+    </KanbanColumns>
+    <KanbanCardSettings HeaderField="Title" ContentField="Summary"></KanbanCardSettings>
+</SfKanban>
+
+@code {
+    private List<KanbanModel> Source = new KanbanModel().GetTaskDetails();
+ private List<ColumnModel> columnData = new List<ColumnModel>() {
+        new ColumnModel(){ HeaderText= "To Do", KeyField= new List<string>() { "Open" } },
+        new ColumnModel(){ HeaderText= "In Progress", KeyField= new List<string>() { "InProgress" } },
+        new ColumnModel(){ HeaderText= "Testing", KeyField= new List<string>() { "Testing" } },
+        new ColumnModel(){ HeaderText= "Done", KeyField= new List<string>() { "Close" } }
+    };
+
+
+}
+
