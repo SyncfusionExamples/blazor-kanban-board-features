@@ -11,12 +11,6 @@
     }
     </KanbanColumns>
     <KanbanCardSettings HeaderField="Title" ContentField="Summary">
-        <Template>
-            @{
-            KanbanModel model = context as KanbanModel;
-                        <div>@model.Priority</div>
-            }
-        </Template>
     </KanbanCardSettings>
     <KanbanSwimlaneSettings KeyField="Assignee" TextField="Assignee" AllowDragAndDrop=false ShowItemCount=true SortDirection=SortDirection.Ascending ShowEmptyRow=true>
     </KanbanSwimlaneSettings>
