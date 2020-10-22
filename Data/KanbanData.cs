@@ -5,7 +5,7 @@ namespace Blazor_Kanban_Features.Data
 {
     public class KanbanModel
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         public string Title { get; set; }
         public string Status { get; set; }
         public string Summary { get; set; }
@@ -36,12 +36,12 @@ namespace Blazor_Kanban_Features.Data
                 "Stored procedure for initial data binding of the grid."
             };
 
-            for (int cCount = 1; cCount <= cardCount; cCount++)
+            for (int colCount = 1; colCount <= cardCount; colCount++)
             {
                 taskDetails.Add(new KanbanModel
                 {
-                    ID = cCount,
-                    Title = "Task  - " + cCount,
+                    Id = colCount,
+                    Title = "Task  - " + colCount,
                     Status = status[rnd.Next(rndMax)],
                     Summary = summaries[rnd.Next(rndMax)],
                     Type = types[rnd.Next(rndMax)],
