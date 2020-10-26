@@ -2,8 +2,7 @@
 
 <h3> WIP validation </h3>
 
-<SfKanban TValue="KanbanModel" KeyField="Status" ConstraintType=ConstraintType.Column>
-    <SfDataManager Json="Tasks"></SfDataManager>
+<SfKanban TValue="KanbanModel" KeyField="Status" DataSource="Tasks" ConstraintType=ConstraintType.Column>
     <KanbanColumns>
     @foreach (ColumnModel item in columnData)
     {

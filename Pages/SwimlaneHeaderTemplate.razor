@@ -2,8 +2,7 @@
 
 <h3> Swimlane Header Template </h3>
 
-<SfKanban TValue="KanbanModel" KeyField="Status">
-    <SfDataManager Json="Tasks"></SfDataManager>
+<SfKanban TValue="KanbanModel" KeyField="Status" DataSource="Tasks">
     <KanbanColumns>
     @foreach (ColumnModel item in columnData)
     {
@@ -27,7 +26,6 @@
         }
     </Template>
     </KanbanSwimlaneSettings>
-    <KanbanSortSettings SortBy=SortOrderBy.Custom Direction=SortDirection.Descending Field="ID"></KanbanSortSettings>
 </SfKanban>
 
 <style>

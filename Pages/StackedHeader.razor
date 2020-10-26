@@ -2,8 +2,7 @@
 
 <h3>Stacked Header</h3>
 
-<SfKanban TValue="KanbanModel" KeyField="Status">
-    <SfDataManager Json="Tasks"></SfDataManager>
+<SfKanban TValue="KanbanModel" KeyField="Status" DataSource="Tasks">
     <KanbanColumns>
          @foreach (ColumnModel item in columnData)
             {
@@ -22,7 +21,7 @@
 @code {
     List<KanbanModel> Tasks = new KanbanModel().GetTaskDetails();
     private List<ColumnModel> columnData = new List<ColumnModel>() {
-        new ColumnModel(){ HeaderText= "To Do", KeyField= new List<string>() { "Open" } },
+        new ColumnModel(){ HeaderText= "Open", KeyField= new List<string>() { "Open" } },
         new ColumnModel(){ HeaderText= "In Progress", KeyField= new List<string>() { "InProgress" } },
         new ColumnModel(){ HeaderText= "Testing", KeyField= new List<string>() { "Testing" } },
         new ColumnModel(){ HeaderText= "Done", KeyField= new List<string>() { "Close" } }
@@ -30,6 +29,6 @@
      private List<StackedHeaderModel> stackedHeaderData = new List<StackedHeaderModel>() {
         new StackedHeaderModel(){ Text= "To Do", KeyFields= new List<string>() { "Open" } },
         new StackedHeaderModel(){ Text= "Development Phase", KeyFields= new List<string>() { "InProgress", "Testing" } },
-        new StackedHeaderModel(){ Text= "Done", KeyFields= new List<string>() { "Close" } }
+        new StackedHeaderModel(){ Text= "Completed", KeyFields= new List<string>() { "Close" } }
     };
 }

@@ -2,8 +2,7 @@
 
 <h3> Toggle Columns </h3>
 
-<SfKanban TValue="KanbanModel" KeyField="Status">
-    <SfDataManager Json="Tasks"></SfDataManager>
+<SfKanban TValue="KanbanModel" KeyField="Status" DataSource="Tasks">
     <KanbanColumns>
     @foreach (ColumnModel item in columnData)
     {
