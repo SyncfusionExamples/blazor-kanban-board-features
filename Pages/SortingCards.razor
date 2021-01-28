@@ -2,7 +2,7 @@
 
 <h3> Sorting Cards </h3>
 
-<SfKanban TValue="KanbanModel" KeyField="Status" DataSource="Tasks">
+<SfKanban TValue="KanbanModel" KeyField="Status" DataSource="Tasks" Height="400px">
     <KanbanColumns>
     @foreach (ColumnModel item in columnData)
     {
@@ -13,7 +13,7 @@
     </KanbanCardSettings>
     <KanbanSwimlaneSettings KeyField="Assignee" TextField="Assignee" AllowDragAndDrop=false ShowItemCount=true SortDirection=SortDirection.Ascending ShowEmptyRow=true>
     </KanbanSwimlaneSettings>
-    <KanbanSortSettings SortBy=SortOrderBy.Custom Direction=SortDirection.Descending Field="Priority"></KanbanSortSettings>
+    <KanbanSortSettings SortBy=SortOrderBy.Custom Direction=SortDirection.Descending Field="Title"></KanbanSortSettings>
 </SfKanban>
 
 @code {

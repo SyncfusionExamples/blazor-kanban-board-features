@@ -2,7 +2,7 @@
 
 <h3>Remote Data Binding</h3>
 <div class="control-section">
-    <SfKanban TValue="KanbanModel" KeyField="Status" AllowDragAndDrop="false">
+    <SfKanban TValue="KanbanModel" KeyField="Status" AllowDragAndDrop="false" Height="400px">
         <SfDataManager Url="https://js.syncfusion.com/ejServices/wcf/Northwind.svc/Tasks" CrossDomain="true"></SfDataManager>
         <KanbanColumns>
             @foreach (ColumnModel item in columnData)
