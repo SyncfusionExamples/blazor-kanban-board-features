@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Blazor_Kanban_Features.Data
+namespace CreatingKanbanSample.Data
 {
     public class KanbanModel
     {

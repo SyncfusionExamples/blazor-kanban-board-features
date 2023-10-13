@@ -1,12 +1,14 @@
-﻿<div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href="">Blazor-Kanban-Features</a>
-    <button class="navbar-toggler" @onclick="ToggleNavMenu">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">CreatingKanbanSample</a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
 </div>
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    <ul class="nav flex-column">      
+<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+    <ul class="nav flex-column">
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="">
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Local Data Binding
@@ -17,27 +19,27 @@
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Remote data
             </NavLink>
         </li>
-         <li class="nav-item px-3">
+        <li class="nav-item px-3">
             <NavLink class="nav-link" href="swimlane">
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Swimlane
             </NavLink>
         </li>
-          <li class="nav-item px-3">
+        <li class="nav-item px-3">
             <NavLink class="nav-link" href="wipcolumn">
                 <span class="oi oi-list-rich" aria-hidden="true"></span> WIP Column
             </NavLink>
         </li>
-          <li class="nav-item px-3">
+        <li class="nav-item px-3">
             <NavLink class="nav-link" href="wipswimlane">
                 <span class="oi oi-list-rich" aria-hidden="true"></span> WIP Swimlane
             </NavLink>
         </li>
-          <li class="nav-item px-3">
+        <li class="nav-item px-3">
             <NavLink class="nav-link" href="toggle-column">
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Toggle Column
             </NavLink>
         </li>
-         <li class="nav-item px-3">
+        <li class="nav-item px-3">
             <NavLink class="nav-link" href="sorting-cards">
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Sorting Cards
             </NavLink>
@@ -57,18 +59,33 @@
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Card Template
             </NavLink>
         </li>
-         <li class="nav-item px-3">
+        <li class="nav-item px-3">
             <NavLink class="nav-link" href="stacked-header">
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Stacked Header
             </NavLink>
         </li>
+        @*<div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="counter">
+                <span class="oi oi-plus" aria-hidden="true"></span> Counter
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="fetchdata">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+            </NavLink>
+        </div>*@
     </ul>
 </div>
 
 @code {
     private bool collapseNavMenu = true;
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 
     private void ToggleNavMenu()
     {
