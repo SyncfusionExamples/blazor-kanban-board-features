@@ -37,8 +37,6 @@ dotnet restore
 dotnet build
 ```
 
-## Further help
+## Troubleshooting & support
 
-See the official ASP.NET Core Blazor documentation for framework details: https://docs.microsoft.com/aspnet/core/blazor
-
-If you want additional examples or changes to this sample, tell me which feature you'd like expanded.
+If you encounter issues, confirm that packages are restored, the project builds, and the license key is registered correctly. For more details about Syncfusion components consult the Syncfusion Blazor documentation.
