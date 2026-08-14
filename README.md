@@ -52,7 +52,7 @@ dotnet run
 
 **Documentation**: https://blazor.syncfusion.com/documentation/kanban/data-binding?search=kanban-board-features
 
-**Online example**: https://blazor.syncfusion.com/demos/kanban/overview?theme=bootstrap5
+**Online example**: https://blazor.syncfusion.com/demos/kanban/overview?theme=fluent2
 
 ## Troubleshooting & support
 
