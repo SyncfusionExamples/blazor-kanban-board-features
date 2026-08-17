@@ -24,7 +24,7 @@ This repository contains a small sample application that illustrates the primary
 * [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or later
 * [Visual Studio Code](https://code.visualstudio.com/)
 
-### Clone the Repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/SyncfusionExamples/blazor-kanban-board-features.git
