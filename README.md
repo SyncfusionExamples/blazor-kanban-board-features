@@ -1,10 +1,10 @@
 # Blazor Kanban Features
 
-A sample Blazor project demonstrating key [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) features and common usage patterns for card management and board configuration.
+A sample Blazor project demonstrating key [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) features and common usage patterns for card management and board configuration.
 
 ## Overview
 
-This repository contains a small sample application that illustrates the primary features of the Syncfusion Blazor Kanban component. Use it as a reference to learn how to bind data, configure swimlanes, validate work-in-progress, and customize card templates.
+This repository contains a small sample application that illustrates the primary features of the Blazor Kanban component. Use it as a reference to learn how to bind data, configure swimlanes, validate work-in-progress, and customize card templates.
 
 ## Features
 
@@ -28,7 +28,7 @@ This repository contains a small sample application that illustrates the primary
 
 ```bash
 git clone https://github.com/SyncfusionExamples/blazor-kanban-board-features.git
-cd CreatingKanbanSample
+cd blazor-kanban-board-features
 ```
 
 ### Run with Visual Studio
@@ -50,7 +50,7 @@ dotnet run
 
 ## References
 
-**Documentation**: https://blazor.syncfusion.com/documentation/kanban/data-binding?search=kanban-board-features
+**Documentation**: https://help.syncfusion.com/gantt-sdk/blazor/kanban/data-binding
 
 **Online example**: https://blazor.syncfusion.com/demos/kanban/overview?theme=fluent2
 
