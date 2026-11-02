@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CreatingKanbanSample.Data
+namespace CreatingKanbanSample
 {
     public class KanbanModel
     {
