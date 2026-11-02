@@ -9,10 +9,10 @@
 
   <ItemGroup>
     <PackageReference Include="Syncfusion.Blazor.Kanban">
-      <Version>33.2.3</Version>
+      <Version>35.1.42</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Blazor.Themes">
-      <Version>33.2.3</Version>
+      <Version>35.1.42</Version>
     </PackageReference>
   </ItemGroup>
 
